@@ -1,0 +1,810 @@
+/*.App {
+  text-align: center;
+}*/
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    height: 76px;
+    background: rgba(255, 255, 255, 0.95); /* 완전 흰색보다 살짝 반투명하게 */
+    backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* 은은한 그림자 추가 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06); /* 연한 회색 테두리 */
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.topbar .brand {
+    color: #111 !important;
+    text-decoration: none !important;
+}
+
+.topbar .brand strong {
+    color: #111 !important;
+}
+
+.topbar .menu a {
+    color: #333 !important;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.topbar .menu a:hover {
+    color: #c99a4b !important;
+}
+
+.hero {
+    min-height: 660px;
+    padding-top: 76px;
+    position: relative;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .38), rgba(0, 0, 0, .25)), url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=2200&q=85) center / cover no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 150px 0 130px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.port img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    display: block;
+    opacity: .9;
+    transition: .25s;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.nav {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #111;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.brand:hover {
+    opacity: 0.85;
+}
+
+.brand strong {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #111;
+}
+
+.brand span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,.68);
+    margin-top: 2px
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.info-item span {
+    color: #4b5563;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 36px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.eyebrow {
+    color: gold;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.section {
+    padding: 86px 0;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.footer {
+    background: #090b0f;
+    color: #d1d5db;
+    padding: 54px 0 28px;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1.2fr;
+    gap: 42px;
+}
+
+.service {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, .06);
+    transition: .25s;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.18;
+    letter-spacing: -2.6px;
+    margin: 0 0 24px;
+    font-weight: 900;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin: 4px 0 18px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.footer h3 {
+    color: #fff;
+    margin: 0 0 18px;
+}
+
+.copy {
+    border-top: 1px solid #222a35;
+    margin-top: 38px;
+    padding-top: 22px;
+    font-size: 13px;
+    color: #858b95;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+
+.txt {
+    padding: 28px 20px 30px;
+    text-align: center;
+}
+
+.info-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.service .mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #0c0d0f;
+    color: #d7a75e;
+    margin: -52px auto 18px;
+    display: grid;
+    place-items: center;
+    border: 3px solid #fff;
+    font-weight: 900;
+    position: relative; 
+    z-index: 10;       
+}
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.port {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #222;
+}
+
+.port-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.portfolio {
+    background: linear-gradient(180deg, #0a0d11, #111820);
+    color: #fff;
+}
+
+.inquiry {
+    background: #f7f7f7;
+}
+
+.form input, .form textarea, .form select {
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    padding: 17px 18px;
+    font-size: 15px;
+    outline: none;
+}
+select {
+    text-rendering: -internal-auto-base(auto, inherit);
+    color: -internal-auto-base(FieldText, inherit);
+    letter-spacing: -internal-auto-base(normal, inherit);
+    word-spacing: -internal-auto-base(normal, inherit);
+    text-transform: -internal-auto-base(none, initial);
+    text-indent: -internal-auto-base(0px, initial);
+    text-shadow: -internal-auto-base(none, inherit);
+    display: inline-block;
+    text-align: -internal-auto-base(start, initial);
+    text-autospace: no-autospace !important;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-rtl-ordering: -internal-auto-base(logical, inherit);
+    background-color: -internal-auto-base(Field, transparent);
+    cursor: -internal-auto-base(default, inherit);
+    min-inline-size: -internal-auto-base(auto, calc-size(auto, max(size, 24px)));
+    min-block-size: -internal-auto-base(auto, calc-size(auto, max(size, 24px, 1lh)));
+    user-select: -internal-auto-base(auto, none);
+    margin: 0em 0em 0em 0em;
+    font: -internal-auto-base(-webkit-small-control, inherit);
+    white-space: -internal-auto-base(pre, inherit);
+    border-width: 1px;
+    border-style: solid;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: none;
+    border-radius: 0px;
+}
+
+input {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    font-language-override: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    margin: 0em 0em 0em 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: none;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.form textarea {
+    grid-column: 1 / 3;
+    height: 190px;
+    resize: none;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+}
+
+.agree {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.submit {
+    grid-column: 2 / 3;
+    height: 58px;
+    border: 0;
+    background: linear-gradient(135deg, #d8ae64, #b98132);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.agree input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #c99a4b;
+    flex-shrink: 0;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    padding: initial;
+    border: initial;
+    margin: 3px 3px 3px 4px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.hero p {
+    font-size: 21px;
+    line-height: 1.8;
+    margin: 0 0 36px;
+    color: rgba(255, 255, 255, .88);
+    font-weight: 500;
+}
+
+.footer p, .footer li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #aeb4bd;
+}
+
+.info p {
+    line-height: 1.85;
+    color: #4b5563;
+    margin: 0 0 28px;
+}
+
+.inq-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.4fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.ico {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    font-weight: 900;
+    color: #111;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+}
+
+.quick {
+  position: fixed;
+  right: 26px;
+  bottom: 26px;
+  z-index: 45;
+  width: 88px;
+  background: rgba(9, 10, 12, .92);
+  border: 1px solid rgba(255, 255, 255, .12);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .28);
+}
+
+.quick button {
+    width: 100%;
+    height: 82px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    font-language-override: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em 0em 0em 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: none;
+} 
+
+.quick small {
+    display: block;
+    color: #bfc5cf;
+    margin-top: 5px;
+}
+
+small {
+    font-size: smaller;
+}
+
+
+textarea {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: monospace;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    font-language-override: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    background-color: field;
+    resize: -internal-textarea-auto;
+    margin: 0em 0em 0em 0em;
+    white-space: pre-wrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: none;
+    padding: 2px;
+}
+
+.port span {
+    display: block;
+    text-align: center;
+    padding: 14px 8px 18px;
+    font-weight: 700;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: .65s;
+}
+
+.show {
+    opacity: 1;
+    transform: none;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none;
+}
+
+.bar {
+    width: 44px;
+    height: 3px;
+    background: #111;
+    margin: 0 auto;
+}
+
+.performance {
+    min-height: 580px;
+    padding-top: 76px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .38), rgba(0, 0, 0, .25)), url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=2200&q=85) center / cover no-repeat;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: black;
+}
+
+.menu a {
+    color: #333; /* 기존 흰색 배경에 맞게 어두운 색상으로 변경 */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #c99a4b; 
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c99a4b;
+    transition: width 0.2s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type="date" i] {
+    text-autospace: no-autospace !important;
+    cursor: default;
+    font-family: monospace;
+    padding-inline-start: 1px;
+    padding: 0px;
+}
+
+option {
+    font-weight: -internal-auto-base(normal, inherit);
+    display: -internal-auto-base(block, flex);
+    padding-block-start: 0px;
+    padding-block-end: -internal-auto-base(1px, 0);
+    min-inline-size: -internal-auto-base(unset, 24px);
+    min-block-size: -internal-auto-base(1.2em, max(24px, 1lh));
+    align-items: -internal-auto-base(unset, center);
+    padding-inline: -internal-auto-base(2px, 0.5em);
+    white-space: nowrap;
+    gap: -internal-auto-base(unset, 0.5em);
+}
+
+select:not(:-internal-list-box) option {
+    min-inline-size: 24px;
+    min-block-size: -internal-auto-base(24px, max(24px, 1lh));
+    font-weight: -internal-auto-base(normal, inherit);
+    align-items: center;
+    gap: 0.5em;
+}
+
+select:not(:-internal-list-box):not([multiple]) option {
+    padding-block-end: -internal-auto-base(1px, 0);
+    display: -internal-auto-base(block, flex);
+    padding-inline: -internal-auto-base(2px, 0.5em);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
